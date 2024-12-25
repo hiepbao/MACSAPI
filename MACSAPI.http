@@ -1,0 +1,6 @@
+@MACSAPI_HostAddress = http://localhost:5076
+
+GET {{MACSAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
