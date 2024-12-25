@@ -54,3 +54,4 @@ C:\Users\cubi2\OneDrive\Máy tính\lamviec\MACSAPI\bin\Debug\net8.0\System.Drawi
 C:\Users\cubi2\OneDrive\Máy tính\lamviec\MACSAPI\bin\Debug\net8.0\System.Private.Windows.Core.dll
 C:\Users\cubi2\OneDrive\Máy tính\lamviec\MACSAPI\bin\Debug\net8.0\zxing.dll
 C:\Users\cubi2\OneDrive\Máy tính\lamviec\MACSAPI\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\cubi2\OneDrive\Máy tính\lamviec\MACSAPI\obj\Debug\net8.0\MACSAPI.sourcelink.json

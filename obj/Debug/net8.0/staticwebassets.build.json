@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "j9MIxpI9+TnsQTNWd02kP0/OcySFAsOyGpvN4vz+q/U=",
+  "Hash": "xS0yExEI66wBmydkXMdA+VSfX4/jOqyTuTovaa6L6kQ=",
   "Source": "MACSAPI",
   "BasePath": "_content/MACSAPI",
   "Mode": "Default",
@@ -74,6 +74,25 @@
       "OriginalItemSpec": "wwwroot\\UploadedFiles\\VehicleLog.cs"
     },
     {
+      "Identity": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\VehicleLog_84d05c8c-cf1b-48ae-9081-f739952e3a9c.cs",
+      "SourceId": "MACSAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\",
+      "BasePath": "_content/MACSAPI",
+      "RelativePath": "UploadedFiles/VehicleLog_84d05c8c-cf1b-48ae-9081-f739952e3a9c.cs",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UploadedFiles\\VehicleLog_84d05c8c-cf1b-48ae-9081-f739952e3a9c.cs"
+    },
+    {
       "Identity": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\ViewVehicleLog.cs",
       "SourceId": "MACSAPI",
       "SourceType": "Discovered",
@@ -91,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\UploadedFiles\\ViewVehicleLog.cs"
+    },
+    {
+      "Identity": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\ViewVehicleLog_ed519c4f-2abe-4208-97c7-569017985d9b.cs",
+      "SourceId": "MACSAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\",
+      "BasePath": "_content/MACSAPI",
+      "RelativePath": "UploadedFiles/ViewVehicleLog_ed519c4f-2abe-4208-97c7-569017985d9b.cs",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UploadedFiles\\ViewVehicleLog_ed519c4f-2abe-4208-97c7-569017985d9b.cs"
     }
   ]
 }
