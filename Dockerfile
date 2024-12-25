@@ -1,5 +1,5 @@
 # Sử dụng image chính thức của .NET SDK
-FROM mcr.microsoft.com/dotnet/sdk:2.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 
 # Đặt thư mục làm việc
 WORKDIR /app
@@ -8,12 +8,12 @@ WORKDIR /app
 COPY *.csproj ./
 RUN dotnet restore
 
-# Sao chép toàn bộ dự án và build
+# Sao chép toàn bộ dự án (sau restore để tận dụng cache Docker)
 COPY . ./
 RUN dotnet publish -c Release -o out
 
 # Tạo image runtime
-FROM mcr.microsoft.com/dotnet/aspnet:2.0
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
 COPY --from=build /app/out .
 
