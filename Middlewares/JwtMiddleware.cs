@@ -58,4 +58,3 @@ namespace MACSAPI.Middlewares
     }
 
 }
-
