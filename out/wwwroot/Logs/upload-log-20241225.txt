@@ -1,0 +1,10 @@
+
+---
+2024-12-25 09:11:11
+[INF] Tài khoản admin tên Admin User uploaded file Downloads.zip dung lượng 1.41 KB chứa 2 file vào lúc 25/12/2024 09:11:11. Chi tiết file: UploadedFiles/VehicleLog.cs, UploadedFiles/ViewVehicleLog.cs
+
+
+---
+2024-12-25 16:24:09
+[INF] Tài khoản admin tên Admin User uploaded file Downloads.zip dung lượng 1.41 KB chứa 2 file vào lúc 25/12/2024 16:24:09. Chi tiết file: UploadedFiles/VehicleLog_84d05c8c-cf1b-48ae-9081-f739952e3a9c.cs, UploadedFiles/ViewVehicleLog_ed519c4f-2abe-4208-97c7-569017985d9b.cs
+

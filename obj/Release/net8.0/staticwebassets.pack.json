@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\Logs\\upload-log-20241224.txt",
+      "PackagePath": "staticwebassets\\Logs\\upload-log-20241224.txt"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\Logs\\upload-log-20241225.txt",
+      "PackagePath": "staticwebassets\\Logs\\upload-log-20241225.txt"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\VehicleLog.cs",
+      "PackagePath": "staticwebassets\\UploadedFiles\\VehicleLog.cs"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\VehicleLog_84d05c8c-cf1b-48ae-9081-f739952e3a9c.cs",
+      "PackagePath": "staticwebassets\\UploadedFiles\\VehicleLog_84d05c8c-cf1b-48ae-9081-f739952e3a9c.cs"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\ViewVehicleLog.cs",
+      "PackagePath": "staticwebassets\\UploadedFiles\\ViewVehicleLog.cs"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\ViewVehicleLog_ed519c4f-2abe-4208-97c7-569017985d9b.cs",
+      "PackagePath": "staticwebassets\\UploadedFiles\\ViewVehicleLog_ed519c4f-2abe-4208-97c7-569017985d9b.cs"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.MACSAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.MACSAPI.props",
+      "PackagePath": "build\\MACSAPI.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.MACSAPI.props",
+      "PackagePath": "buildMultiTargeting\\MACSAPI.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.MACSAPI.props",
+      "PackagePath": "buildTransitive\\MACSAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

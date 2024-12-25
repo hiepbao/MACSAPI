@@ -8,11 +8,11 @@ WORKDIR /app
 COPY *.csproj ./
 RUN dotnet restore
 
-# Sao chép toàn bộ dự án (sau restore để tận dụng cache Docker)
+# Sao chép toàn bộ source code
 COPY . ./
 RUN dotnet publish -c Release -o out
 
-# Tạo image runtime
+# Sử dụng image runtime
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
 COPY --from=build /app/out .
