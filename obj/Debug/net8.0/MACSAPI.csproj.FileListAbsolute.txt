@@ -60,3 +60,5 @@ C:\Users\cubi2\OneDrive\Máy tính\lamviec\MACSAPI\obj\Debug\net8.0\refint\MACSA
 C:\Users\cubi2\OneDrive\Máy tính\lamviec\MACSAPI\obj\Debug\net8.0\MACSAPI.pdb
 C:\Users\cubi2\OneDrive\Máy tính\lamviec\MACSAPI\obj\Debug\net8.0\MACSAPI.genruntimeconfig.cache
 C:\Users\cubi2\OneDrive\Máy tính\lamviec\MACSAPI\obj\Debug\net8.0\ref\MACSAPI.dll
+C:\Users\cubi2\OneDrive\Máy tính\lamviec\MACSAPI\bin\Debug\net8.0\SixLabors.ImageSharp.dll
+C:\Users\cubi2\OneDrive\Máy tính\lamviec\MACSAPI\bin\Debug\net8.0\ZXing.ImageSharp.dll

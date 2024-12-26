@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\cubi2\\OneDrive\\M\u00E1y t\u00EDnh\\lamviec\\MACSAPI\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F1D543B7-B2ED-4003-BC37-1D2E76C18AA7}|MACSAPI.csproj|c:\\users\\cubi2\\onedrive\\m\u00E1y t\u00EDnh\\lamviec\\macsapi\\controllers\\qrcodecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1D543B7-B2ED-4003-BC37-1D2E76C18AA7}|MACSAPI.csproj|solutionrelative:controllers\\qrcodecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1D543B7-B2ED-4003-BC37-1D2E76C18AA7}|MACSAPI.csproj|c:\\users\\cubi2\\onedrive\\m\u00E1y t\u00EDnh\\lamviec\\macsapi\\filters\\fileuploadoperationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1D543B7-B2ED-4003-BC37-1D2E76C18AA7}|MACSAPI.csproj|solutionrelative:filters\\fileuploadoperationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QRCodeController.cs",
+              "DocumentMoniker": "C:\\Users\\cubi2\\OneDrive\\M\u00E1y t\u00EDnh\\lamviec\\MACSAPI\\Controllers\\QRCodeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\QRCodeController.cs",
+              "ToolTip": "C:\\Users\\cubi2\\OneDrive\\M\u00E1y t\u00EDnh\\lamviec\\MACSAPI\\Controllers\\QRCodeController.cs",
+              "RelativeToolTip": "Controllers\\QRCodeController.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAowDMAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T01:26:16.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileUploadOperationFilter.cs",
+              "DocumentMoniker": "C:\\Users\\cubi2\\OneDrive\\M\u00E1y t\u00EDnh\\lamviec\\MACSAPI\\Filters\\FileUploadOperationFilter.cs",
+              "RelativeDocumentMoniker": "Filters\\FileUploadOperationFilter.cs",
+              "ToolTip": "C:\\Users\\cubi2\\OneDrive\\M\u00E1y t\u00EDnh\\lamviec\\MACSAPI\\Filters\\FileUploadOperationFilter.cs",
+              "RelativeToolTip": "Filters\\FileUploadOperationFilter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T10:32:08.952Z",
+              "EditorCaption": ""
             }
           ]
         }

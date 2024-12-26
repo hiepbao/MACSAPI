@@ -1,7 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Drawing;
-using test2.Helpers;
 using ZXing;
+using ZXing.Common;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.PixelFormats;
+using SixLabors.ImageSharp.Processing;
+using ZXing.ImageSharp;
+
 
 namespace MACSAPI.Controllers
 {
@@ -15,19 +20,6 @@ namespace MACSAPI.Controllers
         {
             _logger = logger;
         }
-        private Bitmap PreprocessImage(Bitmap original)
-        {
-            // Tạo một ảnh bitmap mới với cùng kích thước
-            Bitmap processed = new Bitmap(original.Width, original.Height);
-
-            using (Graphics g = Graphics.FromImage(processed))
-            {
-                g.Clear(Color.White); // Tô màu trắng cho nền
-                g.DrawImage(original, 0, 0, original.Width, original.Height); // Vẽ lại ảnh gốc
-            }
-
-            return processed;
-        }
 
         [HttpPost("ScanQR")]
         public IActionResult ScanQR([FromForm] IFormFile qrImage)
@@ -40,43 +32,160 @@ namespace MACSAPI.Controllers
             try
             {
                 using (var stream = qrImage.OpenReadStream())
-                using (var bitmap = new Bitmap(stream))
                 {
-                    // Xử lý hình ảnh trước khi quét
-                    var preprocessedBitmap = PreprocessImage(bitmap);
-                    // Sử dụng ZXing.Net để quét mã QR
-                    var reader = new BarcodeReaderGeneric
+                    // Đọc hình ảnh bằng ImageSharp
+                    using (var image = SixLabors.ImageSharp.Image.Load<Rgba32>(stream))
                     {
-                        AutoRotate = true,
-                        TryInverted = true,
-                        Options = new ZXing.Common.DecodingOptions
+                        // Chuyển đổi ảnh sang grayscale
+                        image.Mutate(x => x.Grayscale());
+
+                        // Lấy kích thước ảnh
+                        int width = image.Width;
+                        int height = image.Height;
+
+                        if (width < 150 || height < 150)
                         {
-                            PossibleFormats = new List<ZXing.BarcodeFormat> { ZXing.BarcodeFormat.QR_CODE },
-                            TryHarder = true
+                            return BadRequest(new { message = "Hình ảnh quá nhỏ để quét mã QR. Vui lòng sử dụng ảnh lớn hơn." });
                         }
-                    };
-                    var luminanceSource = new BitmapLuminanceSource(preprocessedBitmap);
 
-                    // Decode trực tiếp từ LuminanceSource
-                    var result = reader.Decode(luminanceSource);
+                        // Chuyển đổi ảnh sang mảng byte
+                        byte[] pixelData = new byte[width * height];
+                        image.ProcessPixelRows(accessor =>
+                        {
+                            for (int y = 0; y < height; y++)
+                            {
+                                var row = accessor.GetRowSpan(y);
+                                for (int x = 0; x < width; x++)
+                                {
+                                    var pixel = row[x];
+                                    pixelData[y * width + x] = (byte)((pixel.R + pixel.G + pixel.B) / 3);
+                                }
+                            }
+                        });
 
-                    if (result != null)
-                    {
-                        // Tách dữ liệu mã QR nếu có dấu phân cách
-                        var data = result.Text.Contains("|") ? result.Text.Split("|") : new[] { result.Text };
+                        // Tạo LuminanceSource từ pixelData
+                        var luminanceSource = new RGBLuminanceSource(pixelData, width, height);
 
-                        return Ok(new { message = "QR Code data found.", data });
-                    }
-                    else
-                    {
-                        return BadRequest(new { message = "Không tìm thấy mã QR trong hình ảnh. Vui lòng thử lại." });
+                        // Khởi tạo BarcodeReader từ ZXing
+                        var reader = new ZXing.BarcodeReaderGeneric
+                        {
+                            AutoRotate = true,
+                            TryInverted = true,
+                            Options = new ZXing.Common.DecodingOptions
+                            {
+                                PossibleFormats = new List<ZXing.BarcodeFormat> { ZXing.BarcodeFormat.QR_CODE },
+                                TryHarder = true
+                            }
+                        };
+
+                        // Giải mã
+                        var result = reader.Decode(luminanceSource);
+
+                        if (result != null)
+                        {
+                            return Ok(new { message = "QR Code data found.", data = result.Text });
+                        }
+                        else
+                        {
+                            return BadRequest(new { message = "Không tìm thấy mã QR trong hình ảnh." });
+                        }
                     }
                 }
             }
+            catch (IndexOutOfRangeException ex)
+            {
+                return StatusCode(500, new { message = $"Lỗi xảy ra khi đọc mã QR: {ex.Message}. Hãy kiểm tra lại hình ảnh." });
+            }
             catch (Exception ex)
             {
-                return StatusCode(500, new { message = $"Lỗi xảy ra khi đọc mã QR: {ex.Message}" });
+                return StatusCode(500, new { message = $"Lỗi không xác định: {ex.Message}" });
             }
         }
+
+
+
+        //[HttpPost("ScanQR")]
+        //public IActionResult ScanQR([FromForm] IFormFile qrImage)
+        //{
+        //    if (qrImage == null || qrImage.Length == 0)
+        //    {
+        //        return BadRequest(new { message = "Vui lòng tải lên một hình ảnh." });
+        //    }
+
+        //    try
+        //    {
+        //        using (var stream = qrImage.OpenReadStream())
+        //        {
+        //            // Đọc và xử lý hình ảnh bằng ImageSharp
+        //            using (var image = SixLabors.ImageSharp.Image.Load<Rgba32>(stream))
+        //            {
+        //                // Chuyển đổi hình ảnh sang định dạng xám
+        //                image.Mutate(x => x.Grayscale());
+
+        //                int width = image.Width;
+        //                int height = image.Height;
+
+        //                // Chuyển đổi ảnh thành mảng byte (grayscale)
+        //                byte[] pixelData = new byte[width * height];
+
+        //                image.ProcessPixelRows(accessor =>
+        //                {
+        //                    for (int y = 0; y < height; y++)
+        //                    {
+        //                        var row = accessor.GetRowSpan(y);
+        //                        for (int x = 0; x < width; x++)
+        //                        {
+        //                            var pixel = row[x];
+        //                            // Tính giá trị grayscale
+        //                            pixelData[y * width + x] = (byte)((pixel.R + pixel.G + pixel.B) / 3);
+        //                        }
+        //                    }
+        //                });
+
+
+        //                // Sử dụng ZXing để giải mã
+        //                var luminanceSource = new RGBLuminanceSource(pixelData, width, height);
+        //                var reader = new BarcodeReaderGeneric
+        //                {
+        //                    AutoRotate = true,
+        //                    TryInverted = true,
+        //                    Options = new DecodingOptions
+        //                    {
+        //                        PossibleFormats = new List<BarcodeFormat> { BarcodeFormat.QR_CODE },
+        //                        TryHarder = true
+        //                    }
+        //                };
+        //                var result = reader.Decode(luminanceSource);
+        //                if (width < 150 || height < 150)
+        //                {
+        //                    return BadRequest(new { message = "Hình ảnh quá nhỏ, vui lòng tải lên mã QR lớn hơn." });
+        //                }
+        //                if (result != null)
+        //                {
+        //                    // Tách dữ liệu mã QR nếu có dấu phân cách
+        //                    var data = result.Text.Contains("|") ? result.Text.Split("|") : new[] { result.Text };
+
+        //                    return Ok(new { message = "QR Code data found.", data });
+        //                }
+        //                else
+        //                {
+        //                    return BadRequest(new { message = "Không tìm thấy mã QR trong hình ảnh. Vui lòng thử lại." });
+        //                }
+        //            }
+        //        }
+        //    }
+        //    catch (IndexOutOfRangeException ex)
+        //    {
+        //        // Xử lý lỗi do truy cập vượt giới hạn
+        //        return StatusCode(500, new { message = $"Lỗi xảy ra khi đọc mã QR: {ex.Message}. Hãy kiểm tra lại hình ảnh." });
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        // Xử lý lỗi không xác định
+        //        return StatusCode(500, new { message = $"Lỗi không xác định: {ex.Message}" });
+        //    }
+        //}
+
+
     }
 }

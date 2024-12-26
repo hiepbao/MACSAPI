@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "INhweLlwEdubu4lWKNK8MShvgebtY6wBBnezwWk4qEwUtirvRVgGqt7cn/AhDZIvUJX7hvz6WfJiyrPa26maxg==",
+  "dgSpecHash": "QZeexb2H3ZznACTEzVmou/dWe9/Yi2+EGVqe/mVsnsTcWJ4/DkG3Pfh2rdAHUIv30IMTWOwtmc1qjftRs4+bcw==",
   "success": true,
   "projectFilePath": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\MACSAPI.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,7 @@
     "C:\\Users\\cubi2\\.nuget\\packages\\serilog\\4.2.0\\serilog.4.2.0.nupkg.sha512",
     "C:\\Users\\cubi2\\.nuget\\packages\\serilog.extensions.logging\\9.0.0\\serilog.extensions.logging.9.0.0.nupkg.sha512",
     "C:\\Users\\cubi2\\.nuget\\packages\\serilog.sinks.file\\6.0.0\\serilog.sinks.file.6.0.0.nupkg.sha512",
+    "C:\\Users\\cubi2\\.nuget\\packages\\sixlabors.imagesharp\\3.1.6\\sixlabors.imagesharp.3.1.6.nupkg.sha512",
     "C:\\Users\\cubi2\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\cubi2\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\cubi2\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
@@ -30,7 +31,8 @@
     "C:\\Users\\cubi2\\.nuget\\packages\\system.diagnostics.diagnosticsource\\9.0.0\\system.diagnostics.diagnosticsource.9.0.0.nupkg.sha512",
     "C:\\Users\\cubi2\\.nuget\\packages\\system.drawing.common\\9.0.0\\system.drawing.common.9.0.0.nupkg.sha512",
     "C:\\Users\\cubi2\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.3.0\\system.identitymodel.tokens.jwt.8.3.0.nupkg.sha512",
-    "C:\\Users\\cubi2\\.nuget\\packages\\zxing.net\\0.16.9\\zxing.net.0.16.9.nupkg.sha512"
+    "C:\\Users\\cubi2\\.nuget\\packages\\zxing.net\\0.16.9\\zxing.net.0.16.9.nupkg.sha512",
+    "C:\\Users\\cubi2\\.nuget\\packages\\zxing.net.bindings.imagesharp\\0.16.14\\zxing.net.bindings.imagesharp.0.16.14.nupkg.sha512"
   ],
   "logs": []
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MACSAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+613eab1de8b2cf3a75b4014b2a3c881dca5f73f6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67b52041b2a675566732f6e59545ed6a534d7736")]
 [assembly: System.Reflection.AssemblyProductAttribute("MACSAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MACSAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
