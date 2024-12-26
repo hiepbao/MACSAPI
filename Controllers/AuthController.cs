@@ -32,8 +32,21 @@ namespace MACSAPI.Controllers
                 Admin = true,
                 Quote = "Welcome to the system!",
                 IsWebApp = true
+            },
+            new UserAccount
+            {
+                AccountId = 2,
+                EmployeeId = 456,
+                Username = "admin2",
+                Password = HashPassword("123"),
+                FullName = "John Doe",
+                IsActivated = true,
+                Admin = false,
+                Quote = "Strive for greatness!",
+                IsWebApp = false
             }
         };
+
 
         [HttpGet("login")]
         public IActionResult Login([FromQuery] string user, [FromQuery] string pass)

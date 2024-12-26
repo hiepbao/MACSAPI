@@ -3,15 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\cubi2\\OneDrive\\M\u00E1y t\u00EDnh\\lamviec\\MACSAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F1D543B7-B2ED-4003-BC37-1D2E76C18AA7}|MACSAPI.csproj|c:\\users\\cubi2\\onedrive\\m\u00E1y t\u00EDnh\\lamviec\\macsapi\\controllers\\qrcodecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1D543B7-B2ED-4003-BC37-1D2E76C18AA7}|MACSAPI.csproj|solutionrelative:controllers\\qrcodecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F1D543B7-B2ED-4003-BC37-1D2E76C18AA7}|MACSAPI.csproj|c:\\users\\cubi2\\onedrive\\m\u00E1y t\u00EDnh\\lamviec\\macsapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1D543B7-B2ED-4003-BC37-1D2E76C18AA7}|MACSAPI.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cubi2\\OneDrive\\M\u00E1y t\u00EDnh\\lamviec\\QRCodeApi\\Controllers\\WeatherForecastController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F1D543B7-B2ED-4003-BC37-1D2E76C18AA7}|MACSAPI.csproj|c:\\users\\cubi2\\onedrive\\m\u00E1y t\u00EDnh\\lamviec\\macsapi\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1D543B7-B2ED-4003-BC37-1D2E76C18AA7}|MACSAPI.csproj|solutionrelative:controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1D543B7-B2ED-4003-BC37-1D2E76C18AA7}|MACSAPI.csproj|c:\\users\\cubi2\\onedrive\\m\u00E1y t\u00EDnh\\lamviec\\macsapi\\filters\\fileuploadoperationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1D543B7-B2ED-4003-BC37-1D2E76C18AA7}|MACSAPI.csproj|solutionrelative:filters\\fileuploadoperationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F1D543B7-B2ED-4003-BC37-1D2E76C18AA7}|MACSAPI.csproj|c:\\users\\cubi2\\onedrive\\m\u00E1y t\u00EDnh\\lamviec\\macsapi\\wwwroot\\logs\\uploadhistory.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F1D543B7-B2ED-4003-BC37-1D2E76C18AA7}|MACSAPI.csproj|solutionrelative:wwwroot\\logs\\uploadhistory.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -29,41 +30,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\cubi2\\OneDrive\\M\u00E1y t\u00EDnh\\lamviec\\QRCodeApi\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "..\\QRCodeApi\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\cubi2\\OneDrive\\M\u00E1y t\u00EDnh\\lamviec\\QRCodeApi\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "..\\QRCodeApi\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AQIAAHIAAAAAAAAAAAAAAH4AAABuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T02:53:32.824Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "QRCodeController.cs",
-              "DocumentMoniker": "C:\\Users\\cubi2\\OneDrive\\M\u00E1y t\u00EDnh\\lamviec\\MACSAPI\\Controllers\\QRCodeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\QRCodeController.cs",
-              "ToolTip": "C:\\Users\\cubi2\\OneDrive\\M\u00E1y t\u00EDnh\\lamviec\\MACSAPI\\Controllers\\QRCodeController.cs",
-              "RelativeToolTip": "Controllers\\QRCodeController.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAowFYAAABRAAAA",
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\cubi2\\OneDrive\\M\u00E1y t\u00EDnh\\lamviec\\MACSAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\cubi2\\OneDrive\\M\u00E1y t\u00EDnh\\lamviec\\MACSAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAxwCAAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T01:26:16.219Z",
+              "WhenOpened": "2024-12-26T06:41:52.686Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FileUploadOperationFilter.cs",
-              "DocumentMoniker": "C:\\Users\\cubi2\\OneDrive\\M\u00E1y t\u00EDnh\\lamviec\\MACSAPI\\Filters\\FileUploadOperationFilter.cs",
-              "RelativeDocumentMoniker": "Filters\\FileUploadOperationFilter.cs",
-              "ToolTip": "C:\\Users\\cubi2\\OneDrive\\M\u00E1y t\u00EDnh\\lamviec\\MACSAPI\\Filters\\FileUploadOperationFilter.cs",
-              "RelativeToolTip": "Filters\\FileUploadOperationFilter.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "UploadHistory.csv",
+              "DocumentMoniker": "C:\\Users\\cubi2\\OneDrive\\M\u00E1y t\u00EDnh\\lamviec\\MACSAPI\\wwwroot\\Logs\\UploadHistory.csv",
+              "RelativeDocumentMoniker": "wwwroot\\Logs\\UploadHistory.csv",
+              "ToolTip": "C:\\Users\\cubi2\\OneDrive\\M\u00E1y t\u00EDnh\\lamviec\\MACSAPI\\wwwroot\\Logs\\UploadHistory.csv",
+              "RelativeToolTip": "wwwroot\\Logs\\UploadHistory.csv",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2024-12-26T03:33:12.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileController.cs",
+              "DocumentMoniker": "C:\\Users\\cubi2\\OneDrive\\M\u00E1y t\u00EDnh\\lamviec\\MACSAPI\\Controllers\\FileController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FileController.cs",
+              "ToolTip": "C:\\Users\\cubi2\\OneDrive\\M\u00E1y t\u00EDnh\\lamviec\\MACSAPI\\Controllers\\FileController.cs",
+              "RelativeToolTip": "Controllers\\FileController.cs",
+              "ViewState": "AQIAAJoAAAAAAAAAAAAgwL8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T10:32:08.952Z"
+              "WhenOpened": "2024-12-26T03:01:03.89Z",
+              "EditorCaption": ""
             }
           ]
         }

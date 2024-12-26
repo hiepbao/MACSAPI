@@ -22,6 +22,16 @@
   },
   {
     "ContainingType": "MACSAPI.Controllers.FileController",
+    "Method": "ReadUploadHistory",
+    "RelativePath": "api/File/readUploadHistory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MACSAPI.Controllers.FileController",
     "Method": "UploadZipAsync",
     "RelativePath": "api/File/uploadZip",
     "HttpMethod": "POST",

@@ -6,13 +6,8 @@ C:\Users\cubi2\OneDrive\Máy tính\lamviec\MACSAPI\obj\Debug\net8.0\MACSAPI.cspr
 C:\Users\cubi2\OneDrive\Máy tính\lamviec\MACSAPI\obj\Debug\net8.0\MACSAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\cubi2\OneDrive\Máy tính\lamviec\MACSAPI\obj\Debug\net8.0\MACSAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\cubi2\OneDrive\Máy tính\lamviec\MACSAPI\obj\Debug\net8.0\MACSAPI.sourcelink.json
-C:\Users\cubi2\OneDrive\Máy tính\lamviec\MACSAPI\bin\Debug\net8.0\out\web.config
 C:\Users\cubi2\OneDrive\Máy tính\lamviec\MACSAPI\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\cubi2\OneDrive\Máy tính\lamviec\MACSAPI\bin\Debug\net8.0\appsettings.json
-C:\Users\cubi2\OneDrive\Máy tính\lamviec\MACSAPI\bin\Debug\net8.0\out\appsettings.Development.json
-C:\Users\cubi2\OneDrive\Máy tính\lamviec\MACSAPI\bin\Debug\net8.0\out\appsettings.json
-C:\Users\cubi2\OneDrive\Máy tính\lamviec\MACSAPI\bin\Debug\net8.0\out\MACSAPI.deps.json
-C:\Users\cubi2\OneDrive\Máy tính\lamviec\MACSAPI\bin\Debug\net8.0\out\MACSAPI.runtimeconfig.json
 C:\Users\cubi2\OneDrive\Máy tính\lamviec\MACSAPI\bin\Debug\net8.0\MACSAPI.staticwebassets.runtime.json
 C:\Users\cubi2\OneDrive\Máy tính\lamviec\MACSAPI\bin\Debug\net8.0\MACSAPI.exe
 C:\Users\cubi2\OneDrive\Máy tính\lamviec\MACSAPI\bin\Debug\net8.0\MACSAPI.deps.json
