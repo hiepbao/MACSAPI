@@ -7,6 +7,9 @@
       "RelativeMoniker": "D:0:0:{F1D543B7-B2ED-4003-BC37-1D2E76C18AA7}|MACSAPI.csproj|solutionrelative:controllers\\qrcodecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cubi2\\OneDrive\\M\u00E1y t\u00EDnh\\lamviec\\QRCodeApi\\Controllers\\WeatherForecastController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F1D543B7-B2ED-4003-BC37-1D2E76C18AA7}|MACSAPI.csproj|c:\\users\\cubi2\\onedrive\\m\u00E1y t\u00EDnh\\lamviec\\macsapi\\filters\\fileuploadoperationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F1D543B7-B2ED-4003-BC37-1D2E76C18AA7}|MACSAPI.csproj|solutionrelative:filters\\fileuploadoperationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -18,11 +21,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\cubi2\\OneDrive\\M\u00E1y t\u00EDnh\\lamviec\\QRCodeApi\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "..\\QRCodeApi\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\cubi2\\OneDrive\\M\u00E1y t\u00EDnh\\lamviec\\QRCodeApi\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "..\\QRCodeApi\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAAAH4AAABuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T02:53:32.824Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -32,14 +48,14 @@
               "RelativeDocumentMoniker": "Controllers\\QRCodeController.cs",
               "ToolTip": "C:\\Users\\cubi2\\OneDrive\\M\u00E1y t\u00EDnh\\lamviec\\MACSAPI\\Controllers\\QRCodeController.cs",
               "RelativeToolTip": "Controllers\\QRCodeController.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAowDMAAABEAAAA",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAowFYAAABRAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-26T01:26:16.219Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "FileUploadOperationFilter.cs",
               "DocumentMoniker": "C:\\Users\\cubi2\\OneDrive\\M\u00E1y t\u00EDnh\\lamviec\\MACSAPI\\Filters\\FileUploadOperationFilter.cs",
               "RelativeDocumentMoniker": "Filters\\FileUploadOperationFilter.cs",
@@ -47,8 +63,7 @@
               "RelativeToolTip": "Filters\\FileUploadOperationFilter.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T10:32:08.952Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-25T10:32:08.952Z"
             }
           ]
         }

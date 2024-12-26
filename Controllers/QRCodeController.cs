@@ -83,7 +83,8 @@ namespace MACSAPI.Controllers
 
                         if (result != null)
                         {
-                            return Ok(new { message = "QR Code data found.", data = result.Text });
+                            var data = result.Text.Contains("|") ? result.Text.Split("|") : new[] { result.Text };
+                            return Ok(new { message = "QR Code data found.", data });
                         }
                         else
                         {
