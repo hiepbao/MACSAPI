@@ -5,24 +5,156 @@
       "PackagePath": "staticwebassets\\Logs\\UploadHistory.csv"
     },
     {
-      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\Logs\\application-log-20241226.txt",
-      "PackagePath": "staticwebassets\\Logs\\application-log-20241226.txt"
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\Logs\\application-log-20241227.txt",
+      "PackagePath": "staticwebassets\\Logs\\application-log-20241227.txt"
     },
     {
-      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\Logs\\upload-log-20241226.txt",
-      "PackagePath": "staticwebassets\\Logs\\upload-log-20241226.txt"
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\Logs\\application-log-20241229.txt",
+      "PackagePath": "staticwebassets\\Logs\\application-log-20241229.txt"
     },
     {
-      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\Logs\\upload-log-20241227.txt",
-      "PackagePath": "staticwebassets\\Logs\\upload-log-20241227.txt"
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\Logs\\application-log-20241230.txt",
+      "PackagePath": "staticwebassets\\Logs\\application-log-20241230.txt"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\Logs\\upload-log-20241230.txt",
+      "PackagePath": "staticwebassets\\Logs\\upload-log-20241230.txt"
     },
     {
       "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\SV13-6G1.pdf",
       "PackagePath": "staticwebassets\\UploadedFiles\\SV13-6G1.pdf"
     },
     {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\SV13-6G1_680f5e6d-a129-41f9-b3b2-87b725cbfbaf.pdf",
+      "PackagePath": "staticwebassets\\UploadedFiles\\SV13-6G1_680f5e6d-a129-41f9-b3b2-87b725cbfbaf.pdf"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\bread1.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\bread1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\bread10.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\bread10.png"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\bread11.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\bread11.png"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\bread12.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\bread12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\bread13.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\bread13.png"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\bread2.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\bread2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\bread3.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\bread3.png"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\bread4.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\bread4.png"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\bread5.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\bread5.png"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\bread6.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\bread6.png"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\bread7.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\bread7.png"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\bread8.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\bread8.png"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\bread9.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\bread9.png"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\cake1.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\cake1.png"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\cake2.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\cake2.png"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\cake3.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\cake3.png"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\cake4.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\cake4.png"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\cake5.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\cake5.png"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\cake6.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\cake6.png"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\cake7.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\cake7.png"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\cake8.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\cake8.png"
+    },
+    {
       "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\cb87d77a0303be5de712.jpg",
       "PackagePath": "staticwebassets\\UploadedFiles\\cb87d77a0303be5de712.jpg"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\cb87d77a0303be5de712_670fd2e8-e496-49a0-8f12-c17e37b6f6e8.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\cb87d77a0303be5de712_670fd2e8-e496-49a0-8f12-c17e37b6f6e8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\pastry1.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\pastry1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\pastry2.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\pastry2.png"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\pastry3.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\pastry3.png"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\pastry4.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\pastry4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\pastry5.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\pastry5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\pastry6.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\pastry6.png"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\pastry7.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\pastry7.png"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\pastry8.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\pastry8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\pastry9.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\pastry9.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MACSAPI.Microsoft.AspNetCore.StaticWebAssets.props",

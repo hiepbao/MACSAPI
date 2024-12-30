@@ -47,6 +47,115 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "MACSAPI.Controllers.HistoryCarController",
+    "Method": "GetHistoryCars",
+    "RelativePath": "api/HistoryCar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MACSAPI.Models.HistoryCar, MACSAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MACSAPI.Controllers.HistoryCarController",
+    "Method": "PostHistoryCar",
+    "RelativePath": "api/HistoryCar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "historyCar",
+        "Type": "MACSAPI.Models.HistoryCar",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MACSAPI.Models.HistoryCar",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MACSAPI.Controllers.HistoryCarController",
+    "Method": "DeleteHistoryCar",
+    "RelativePath": "api/HistoryCar/{cardNo}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cardNo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MACSAPI.Controllers.HistoryCarController",
+    "Method": "GetHistoryCarByCardNo",
+    "RelativePath": "api/HistoryCar/byCardno/{cardNo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cardNo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MACSAPI.Models.HistoryCar, MACSAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MACSAPI.Controllers.HistoryCarController",
+    "Method": "PutHistoryCar",
+    "RelativePath": "api/HistoryCar/edit/{cardNo}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cardNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedHistoryCar",
+        "Type": "MACSAPI.Models.HistoryCar",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "MACSAPI.Controllers.QRCodeController",
     "Method": "ScanQR",
     "RelativePath": "api/QRCode/ScanQR",

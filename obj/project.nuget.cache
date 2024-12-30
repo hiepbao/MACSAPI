@@ -1,11 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "QZeexb2H3ZznACTEzVmou/dWe9/Yi2+EGVqe/mVsnsTcWJ4/DkG3Pfh2rdAHUIv30IMTWOwtmc1qjftRs4+bcw==",
+  "dgSpecHash": "/oHa6XUPl/l7Pvn001CBjEM5+A06VRk8rXd/HTmOI9pSOqlk37fdH9MdSe4mGLPKSNiX5sd7+OhhU4vRuQ+oeQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\MACSAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cubi2\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.11\\microsoft.aspnetcore.authentication.jwtbearer.8.0.11.nupkg.sha512",
+    "C:\\Users\\cubi2\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.11\\microsoft.entityframeworkcore.8.0.11.nupkg.sha512",
+    "C:\\Users\\cubi2\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.11\\microsoft.entityframeworkcore.abstractions.8.0.11.nupkg.sha512",
+    "C:\\Users\\cubi2\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.11\\microsoft.entityframeworkcore.analyzers.8.0.11.nupkg.sha512",
+    "C:\\Users\\cubi2\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\8.0.11\\microsoft.entityframeworkcore.inmemory.8.0.11.nupkg.sha512",
     "C:\\Users\\cubi2\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\cubi2\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\cubi2\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.1\\microsoft.extensions.caching.memory.8.0.1.nupkg.sha512",
     "C:\\Users\\cubi2\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.0\\microsoft.extensions.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\cubi2\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512",
     "C:\\Users\\cubi2\\.nuget\\packages\\microsoft.extensions.logging\\9.0.0\\microsoft.extensions.logging.9.0.0.nupkg.sha512",

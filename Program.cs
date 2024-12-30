@@ -6,6 +6,9 @@ using System.Text;
 using Serilog;
 using MACSAPI.Filters;
 using Microsoft.OpenApi.Models;
+using System;
+using Microsoft.EntityFrameworkCore;
+using MACSAPI.Data;
 
 var logsPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Logs");
 
@@ -53,6 +56,10 @@ builder.Services.AddSwaggerGen(c =>
 
     // C?u h?nh ð? h? tr? file upload
     c.OperationFilter<FileUploadOperationFilter>();
+});
+builder.Services.AddDbContext<AppDbContext>(options =>
+{
+    options.UseInMemoryDatabase("InMemoryDb");
 });
 
 
