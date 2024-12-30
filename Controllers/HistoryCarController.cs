@@ -22,6 +22,17 @@ namespace MACSAPI.Controllers
             return await _context.HistoryCar.ToListAsync();
         }
 
+        [HttpGet("GetHistoryCarsIn")]
+        public async Task<ActionResult<IEnumerable<HistoryCar>>> GetHistoryCarsIn()
+        {
+            var historyCars = await _context.HistoryCar
+                                              .Where(h => h.IsGetIn == true && h.IsGetOut == false)
+                                              .ToListAsync();
+
+
+            return Ok(historyCars);
+        }
+
         [HttpGet("byCardno/{cardNo}")]
         public async Task<ActionResult<List<HistoryCar>>> GetHistoryCarByCardNo(string cardNo)
         {
