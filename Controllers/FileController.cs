@@ -87,7 +87,7 @@ namespace MACSAPI.Controllers
                 var username = HttpContext.User.Claims.FirstOrDefault(c => c.Type == "Username")?.Value ?? "Anonymous";
                 var fullname = HttpContext.User.Claims.FirstOrDefault(c => c.Type == "FullName")?.Value ?? "Anonymous";
                 var fileSizeInKB = zipFile.Length / 1024.0;
-                DateTime now = DateTime.Now;
+                DateTime now = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, TimeZoneInfo.FindSystemTimeZoneById("SE Asia Standard Time")); ;
                 string formattedDate = now.ToString("dd/MM/yyyy HH:mm:ss");
                 // Lấy danh sách tên file từ savedFiles
                 string savedFileList = string.Join(", ", savedFiles.Select(file => Path.GetFileName(file)));
