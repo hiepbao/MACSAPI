@@ -57,7 +57,6 @@ namespace MACSAPI.Controllers
                 IsActivated = true,
                 Admin = false,
                 Role = "store",
-<<<<<<< HEAD
                 Quote = "Strive for greatness!",
                 IsWebApp = false
             },
@@ -71,8 +70,6 @@ namespace MACSAPI.Controllers
                 IsActivated = true,
                 Admin = false,
                 Role = "user",
-=======
->>>>>>> 96ac86a01318f98ceb7c39ee26d39262494b06eb
                 Quote = "Strive for greatness!",
                 IsWebApp = false
             }
