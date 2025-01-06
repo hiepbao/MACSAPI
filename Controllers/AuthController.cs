@@ -69,7 +69,7 @@ namespace MACSAPI.Controllers
                 FullName = "user",
                 IsActivated = true,
                 Admin = false,
-                Role = "user",
+                Role = "store",
                 Quote = "Strive for greatness!",
                 IsWebApp = false
             }
