@@ -66,7 +66,7 @@ namespace MACSAPI.Controllers
                 EmployeeId = 789,
                 Username = "user",
                 Password = HashPassword("123"),
-                FullName = "Store",
+                FullName = "user",
                 IsActivated = true,
                 Admin = false,
                 Role = "user",
