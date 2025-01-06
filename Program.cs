@@ -19,13 +19,13 @@ if (!Directory.Exists(logsPath))
 }
 // T?o logger Serilog
 Log.Logger = new LoggerConfiguration()
-    .WriteTo.File(
-        path: Path.Combine(logsPath, "application-log-.txt"),
-        rollingInterval: RollingInterval.Day,
-        retainedFileCountLimit: 7, // Ghi log 7 ngày
-        outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}",
-        restrictedToMinimumLevel: Serilog.Events.LogEventLevel.Warning 
-    )
+    //.WriteTo.File(
+    //    path: Path.Combine(logsPath, "application-log-.txt"),
+    //    rollingInterval: RollingInterval.Day,
+    //    retainedFileCountLimit: 7, // Ghi log 7 ngày
+    //    outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}",
+    //    restrictedToMinimumLevel: Serilog.Events.LogEventLevel.Warning 
+    //)
     .WriteTo.Logger(lc => lc
         .Filter.ByIncludingOnly(e => e.Properties.ContainsKey("UploadContext")) // Ch? log upload
         .WriteTo.File(

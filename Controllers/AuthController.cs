@@ -30,6 +30,7 @@ namespace MACSAPI.Controllers
                 FullName = "Admin User",
                 IsActivated = true,
                 Admin = true,
+                Role = "admin",
                 Quote = "Welcome to the system!",
                 IsWebApp = true
             },
@@ -41,7 +42,21 @@ namespace MACSAPI.Controllers
                 Password = HashPassword("123"),
                 FullName = "John Doe",
                 IsActivated = true,
+                Admin = true,
+                Role = "admin",
+                Quote = "Strive for greatness!",
+                IsWebApp = false
+            },
+            new UserAccount
+            {
+                AccountId = 3,
+                EmployeeId = 789,
+                Username = "sto",
+                Password = HashPassword("123"),
+                FullName = "Store",
+                IsActivated = true,
                 Admin = false,
+                Role = "store",
                 Quote = "Strive for greatness!",
                 IsWebApp = false
             }
@@ -86,7 +101,8 @@ namespace MACSAPI.Controllers
                         new Claim("AccountId", account.AccountId.ToString()),
                         new Claim("Username", account.Username),
                         new Claim("FullName", account.FullName),
-                        new Claim("Admin", account.Admin.ToString())
+                        new Claim("Admin", account.Admin.ToString()),
+                        new Claim("role", account.Role)
                     }),
                     Expires = DateTime.UtcNow.AddHours(1), // Thời gian sống của token
                     SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key)), SecurityAlgorithms.HmacSha256Signature),

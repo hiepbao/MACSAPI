@@ -8,7 +8,7 @@ namespace MACSAPI.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        public DbSet<HistoryCar> HistoryCar { get; set; } // Thay MyEntity bằng entity của bạn
+        public DbSet<HistoryCar> HistoryCar { get; set; } 
     }
 
 
