@@ -12,6 +12,7 @@
         public bool Admin { get; set; }
         public string Quote { get; set; }
         public bool IsWebApp { get; set; }
+        public string Role { get; set; }
     }
 
     // Models/LoginRequest.cs
