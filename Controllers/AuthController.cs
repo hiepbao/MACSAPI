@@ -5,6 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.EntityFrameworkCore;
 
 namespace MACSAPI.Controllers
 {
@@ -69,11 +70,29 @@ namespace MACSAPI.Controllers
                 FullName = "user",
                 IsActivated = true,
                 Admin = false,
-                Role = "store",
+                Role = "user",
                 Quote = "Strive for greatness!",
                 IsWebApp = false
             }
         };
+
+        [HttpGet("GetAllUsers")]
+        public ActionResult<IEnumerable<UserAccount>> GetAllUsers()
+        {
+            return Ok(_users);
+        }
+
+        [HttpGet("GetUserById/{userId}")]
+        public IActionResult GetUserById(int userId)
+        {
+            // Tìm user trong danh sách theo AccountId
+            var user = _users.FirstOrDefault(u => u.AccountId == userId);
+
+            if (user == null)
+                return NotFound(new { Message = "User not found" });
+
+            return Ok(user);  // Trả về thông tin user nếu tìm thấy
+        }
 
 
         [HttpGet("login")]

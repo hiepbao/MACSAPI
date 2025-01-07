@@ -1,15 +1,15 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\Logs\\UploadHistory.csv",
+      "Id": "C:\\Users\\Admin\\Desktop\\lamviec\\MACSAPI\\wwwroot\\Logs\\UploadHistory.csv",
       "PackagePath": "staticwebassets\\Logs\\UploadHistory.csv"
     },
     {
-      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\Logs\\application-log-20241230.txt",
+      "Id": "C:\\Users\\Admin\\Desktop\\lamviec\\MACSAPI\\wwwroot\\Logs\\application-log-20241230.txt",
       "PackagePath": "staticwebassets\\Logs\\application-log-20241230.txt"
     },
     {
-      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\Logs\\upload-log-20241230.txt",
+      "Id": "C:\\Users\\Admin\\Desktop\\lamviec\\MACSAPI\\wwwroot\\Logs\\upload-log-20241230.txt",
       "PackagePath": "staticwebassets\\Logs\\upload-log-20241230.txt"
     },
     {
