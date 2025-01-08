@@ -14,72 +14,116 @@ namespace MACSAPI.Controllers
     public class AuthController : Controller
     {
         private readonly IConfiguration _configuration;
+        private readonly List<UserAccount> _users;
+        private readonly List<UserGroup> _userGroups;
 
         public AuthController(IConfiguration configuration)
         {
             _configuration = configuration;
-        }
 
-        private readonly List<UserAccount> _users = new()
-        {
-            new UserAccount
+            // Khởi tạo danh sách user
+            _users = new List<UserAccount>
             {
-                AccountId = 1,
-                EmployeeId = 123,
-                Username = "admin",
-                Password = HashPassword("123"),
-                FullName = "Admin User",
-                IsActivated = true,
-                Admin = true,
-                Role = "admin",
-                Quote = "Welcome to the system!",
-                IsWebApp = true
-            },
-            new UserAccount
+                new UserAccount
+                {
+                    AccountId = 1,
+                    EmployeeId = 123,
+                    Username = "admin",
+                    Password = HashPassword("123"),
+                    FullName = "Admin User",
+                    IsActivated = true,
+                    Admin = true,
+                    Role = "admin",
+                    Quote = "Welcome to the system!",
+                    IsWebApp = true
+                },
+                new UserAccount
+                {
+                    AccountId = 2,
+                    EmployeeId = 456,
+                    Username = "admin2",
+                    Password = HashPassword("123"),
+                    FullName = "John Doe",
+                    IsActivated = true,
+                    Admin = true,
+                    Role = "admin",
+                    Quote = "Strive for greatness!",
+                    IsWebApp = false
+                },
+                new UserAccount
+                {
+                    AccountId = 3,
+                    EmployeeId = 789,
+                    Username = "sto",
+                    Password = HashPassword("123"),
+                    FullName = "Store",
+                    IsActivated = true,
+                    Admin = false,
+                    Role = "store",
+                    Quote = "Strive for greatness!",
+                    IsWebApp = false
+                },
+                new UserAccount
+                {
+                    AccountId = 4,
+                    EmployeeId = 789,
+                    Username = "user",
+                    Password = HashPassword("123"),
+                    FullName = "user",
+                    IsActivated = true,
+                    Admin = false,
+                    Role = "user",
+                    Quote = "Strive for greatness!",
+                    IsWebApp = false
+                }
+            };
+
+            // Khởi tạo danh sách nhóm trong constructor
+            _userGroups = new List<UserGroup>
             {
-                AccountId = 2,
-                EmployeeId = 456,
-                Username = "admin2",
-                Password = HashPassword("123"),
-                FullName = "John Doe",
-                IsActivated = true,
-                Admin = true,
-                Role = "admin",
-                Quote = "Strive for greatness!",
-                IsWebApp = false
-            },
-            new UserAccount
-            {
-                AccountId = 3,
-                EmployeeId = 789,
-                Username = "sto",
-                Password = HashPassword("123"),
-                FullName = "Store",
-                IsActivated = true,
-                Admin = false,
-                Role = "store",
-                Quote = "Strive for greatness!",
-                IsWebApp = false
-            },
-            new UserAccount
-            {
-                AccountId = 4,
-                EmployeeId = 789,
-                Username = "user",
-                Password = HashPassword("123"),
-                FullName = "user",
-                IsActivated = true,
-                Admin = false,
-                Role = "user",
-                Quote = "Strive for greatness!",
-                IsWebApp = false
-            }
-        };
+                new UserGroup
+                {
+                    GroupId = 1,
+                    GroupName = "Nhóm Admin",
+                    Description = "Group for system administrators.",
+                    Members = new List<UserAccount>
+                    {
+                        _users.First(u => u.Username == "admin"),
+                        _users.First(u => u.Username == "admin2")
+                    }
+                },
+                new UserGroup
+                {
+                    GroupId = 2,
+                    GroupName = "Nhóm kho",
+                    Description = "Group for store managers.",
+                    Members = new List<UserAccount>
+                    {
+                        _users.First(u => u.Username == "sto")
+                    }
+                },
+                new UserGroup
+                {
+                    GroupId = 3,
+                    GroupName = "Nhóm người dùng",
+                    Description = "Group for regular users.",
+                    Members = new List<UserAccount>
+                    {
+                        _users.First(u => u.Username == "user")
+                    }
+                }
+            };
+        }
 
         [HttpGet("GetAllUsers")]
         public ActionResult<IEnumerable<UserAccount>> GetAllUsers()
         {
             return Ok(_users);
+        }
+        [HttpGet("GetGroupUsers")]
+        public ActionResult<IEnumerable<UserAccount>> GetGroupUsers()
+        {
+            return Ok(_userGroups);
         }
 
         [HttpGet("GetUserById/{userId}")]
@@ -93,7 +137,6 @@ namespace MACSAPI.Controllers
 
             return Ok(user);  // Trả về thông tin user nếu tìm thấy
         }
-
 
         [HttpGet("login")]
         public IActionResult Login([FromQuery] string user, [FromQuery] string pass)
@@ -156,7 +199,6 @@ namespace MACSAPI.Controllers
                 });
             }
         }
-
 
         public static string HashPassword(string password)
         {

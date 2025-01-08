@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ACy+TXQvTtNRlbm51OI272VQBCRZGDT5NTSmweQTepY=",
+  "Hash": "kocP7Zvjw9QAwx7uGfK8eUvNAYwzUp4lTml62GDq8CE=",
   "Source": "MACSAPI",
   "BasePath": "_content/MACSAPI",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "MACSAPI\\wwwroot",
       "Source": "MACSAPI",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\lamviec\\MACSAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\",
       "BasePath": "_content/MACSAPI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\lamviec\\MACSAPI\\wwwroot\\Logs\\application-log-20241230.txt",
+      "Identity": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\Logs\\application-log-20241230.txt",
       "SourceId": "MACSAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\lamviec\\MACSAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\",
       "BasePath": "_content/MACSAPI",
       "RelativePath": "Logs/application-log-20241230.txt",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\Logs\\application-log-20241230.txt"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\lamviec\\MACSAPI\\wwwroot\\Logs\\UploadHistory.csv",
+      "Identity": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\Logs\\UploadHistory.csv",
       "SourceId": "MACSAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\lamviec\\MACSAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\",
       "BasePath": "_content/MACSAPI",
       "RelativePath": "Logs/UploadHistory.csv",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\Logs\\UploadHistory.csv"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\lamviec\\MACSAPI\\wwwroot\\Logs\\upload-log-20241230.txt",
+      "Identity": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\Logs\\upload-log-20241230.txt",
       "SourceId": "MACSAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\lamviec\\MACSAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\",
       "BasePath": "_content/MACSAPI",
       "RelativePath": "Logs/upload-log-20241230.txt",
       "AssetKind": "All",
