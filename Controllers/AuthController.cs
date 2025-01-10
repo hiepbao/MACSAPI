@@ -126,11 +126,11 @@ namespace MACSAPI.Controllers
             return Ok(_userGroups);
         }
 
-        [HttpGet("GetUserById/{userId}")]
-        public IActionResult GetUserById(int userId)
+        [HttpGet("GetUserByName/{FullName}")]
+        public IActionResult GetUserById(string FullName)
         {
             // Tìm user trong danh sách theo AccountId
-            var user = _users.FirstOrDefault(u => u.AccountId == userId);
+            var user = _users.FirstOrDefault(u => u.FullName == FullName);
 
             if (user == null)
                 return NotFound(new { Message = "User not found" });

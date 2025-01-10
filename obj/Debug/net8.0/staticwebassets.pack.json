@@ -5,12 +5,24 @@
       "PackagePath": "staticwebassets\\Logs\\UploadHistory.csv"
     },
     {
-      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\Logs\\application-log-20241230.txt",
-      "PackagePath": "staticwebassets\\Logs\\application-log-20241230.txt"
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\Logs\\upload-log-20250108.txt",
+      "PackagePath": "staticwebassets\\Logs\\upload-log-20250108.txt"
     },
     {
-      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\Logs\\upload-log-20241230.txt",
-      "PackagePath": "staticwebassets\\Logs\\upload-log-20241230.txt"
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\SV13-6G1.pdf",
+      "PackagePath": "staticwebassets\\UploadedFiles\\SV13-6G1.pdf"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\VehicleLog.cs",
+      "PackagePath": "staticwebassets\\UploadedFiles\\VehicleLog.cs"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\ViewVehicleLog.cs",
+      "PackagePath": "staticwebassets\\UploadedFiles\\ViewVehicleLog.cs"
+    },
+    {
+      "Id": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\cb87d77a0303be5de712.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\cb87d77a0303be5de712.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MACSAPI.Microsoft.AspNetCore.StaticWebAssets.props",

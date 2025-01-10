@@ -42,14 +42,14 @@
   {
     "ContainingType": "MACSAPI.Controllers.AuthController",
     "Method": "GetUserById",
-    "RelativePath": "api/Auth/GetUserById/{userId}",
+    "RelativePath": "api/Auth/GetUserByName/{FullName}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userId",
-        "Type": "System.Int32",
+        "Name": "FullName",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
