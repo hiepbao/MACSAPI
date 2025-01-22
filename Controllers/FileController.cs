@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MACSAPI.Data;
+using MACSAPI.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.IO;
 using System.IO.Compression;
 
@@ -8,10 +11,19 @@ namespace MACSAPI.Controllers
     [Route("api/[controller]")]
     public class FileController : Controller
     {
+        private readonly AppDbContext _dbContext;
+        private readonly ILogger<FileController> _logger;
+
+        public FileController(AppDbContext dbContext, ILogger<FileController> logger)
+        {
+            _dbContext = dbContext;
+            _logger = logger;
+        }
+
         [HttpPost("uploadZip")]
         public async Task<IActionResult> UploadZipAsync(IFormFile zipFile)
         {
-            ILogger<FileController> _logger = HttpContext.RequestServices.GetRequiredService<ILogger<FileController>>();
+            //ILogger<FileController> _logger = HttpContext.RequestServices.GetRequiredService<ILogger<FileController>>();
 
             if (zipFile == null || zipFile.Length == 0)
             {
@@ -77,7 +89,8 @@ namespace MACSAPI.Controllers
                             }
 
                             // Thêm đường dẫn tương đối vào danh sách
-                            savedFiles.Add(Path.Combine("UploadedFiles", Path.GetFileName(destinationFileName)).Replace("\\", "/"));
+                            //savedFiles.Add(Path.Combine("UploadedFiles", Path.GetFileName(destinationFileName)).Replace("\\", "/"));
+                            savedFiles.Add(Path.GetFileName(destinationFileName));
                         }
                     }
                 }
@@ -91,6 +104,20 @@ namespace MACSAPI.Controllers
                 string formattedDate = now.ToString("dd/MM/yyyy HH:mm:ss");
                 // Lấy danh sách tên file từ savedFiles
                 string savedFileList = string.Join(", ", savedFiles.Select(file => Path.GetFileName(file)));
+                var fileModel = new FileModel
+                {
+                    Id = Guid.NewGuid(),
+                    Username = username,
+                    FullName = fullname,
+                    FileName = zipFile.FileName,
+                    FileSizeInKB = $"{fileSizeInKB:0.00}",
+                    CountFile = savedFiles.Count,
+                    Date = now,
+                    SavedFileList = savedFiles
+                };
+
+                await _dbContext.FileModel.AddAsync(fileModel);
+                await _dbContext.SaveChangesAsync();
                 using (_logger.BeginScope(new Dictionary<string, object> { { "UploadContext", true } }))
                 {
                     _logger.LogInformation("Tài khoản {UserName} tên {FullName} uploaded file {FileName} dung lượng {FileSize:0.00} KB chứa {FileCount} file vào lúc {UploadTime}. Chi tiết file: {ExtractedFiles}",
@@ -128,67 +155,99 @@ namespace MACSAPI.Controllers
             }
         }
 
-
         [HttpGet("readUploadHistory")]
-        public IActionResult ReadUploadHistory()
+        public async Task<IActionResult> ReadUploadHistoryAsync()
         {
-            // Đường dẫn tới file CSV
-            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Logs", "UploadHistory.csv");
-
-            // Kiểm tra file tồn tại
-            if (!System.IO.File.Exists(filePath))
-                return NotFound(new { message = "File lịch sử không tồn tại." });
-
-            var data = new List<dynamic>();
-
             try
             {
-                using (var reader = new StreamReader(filePath))
-                {
-                    string[] headers = null;
-                    int lineNumber = 0;
-
-                    while (!reader.EndOfStream)
+                var uploadHistory = await _dbContext.FileModel
+                    .Select(f => new
                     {
-                        var line = reader.ReadLine();
+                        f.Username,
+                        f.FullName,
+                        f.FileName,
+                        f.FileSizeInKB,
+                        f.CountFile,
+                        f.Date,
+                        f.SavedFileList
+                    })
+                    .ToListAsync();
 
-                        // Dùng Split với tham số StringSplitOptions.RemoveEmptyEntries để đảm bảo không bị lỗi do khoảng trắng
-                        var values = line.Split(new[] { ',' }, StringSplitOptions.None);
-
-                        if (lineNumber == 0)
-                        {
-                            // Đọc dòng đầu tiên làm tiêu đề cột
-                            headers = values;
-                        }
-                        else
-                        {
-                            // Đọc từng dòng và chuyển thành object
-                            var record = new Dictionary<string, object>();
-                            for (int i = 0; i < headers.Length - 1; i++) // Lặp qua các cột ngoài cột cuối
-                            {
-                                record[headers[i].Trim()] = values[i].Trim();
-                            }
-
-                            // Cột cuối cùng (FileList): Lấy từ cột thứ [headers.Length - 1] và ghép tất cả các giá trị còn lại
-                            var fileListIndex = headers.Length - 1;
-                            record[headers[fileListIndex].Trim()] = values
-                                .Skip(fileListIndex) // Bỏ qua các cột trước đó
-                                .Select(file => file.Trim()) // Loại bỏ khoảng trắng
-                                .ToList(); // Chuyển thành danh sách
-
-                            data.Add(record);
-                        }
-                        lineNumber++;
-                    }
+                if (!uploadHistory.Any())
+                {
+                    return NotFound(new { message = "Không có dữ liệu lịch sử tải lên." });
                 }
 
-                return Ok(data); // Trả dữ liệu JSON
+                return Ok(uploadHistory);
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { message = "Lỗi đọc file CSV", error = ex.Message });
+                _logger.LogError(ex, "An error occurred while reading upload history from the database.");
+                return StatusCode(500, new { message = "Lỗi đọc lịch sử từ cơ sở dữ liệu", error = ex.Message });
             }
         }
+
+
+        //[HttpGet("readUploadHistory")]
+        //public IActionResult ReadUploadHistory()
+        //{
+        //    // Đường dẫn tới file CSV
+        //    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Logs", "UploadHistory.csv");
+
+        //    // Kiểm tra file tồn tại
+        //    if (!System.IO.File.Exists(filePath))
+        //        return NotFound(new { message = "File lịch sử không tồn tại." });
+
+        //    var data = new List<dynamic>();
+
+        //    try
+        //    {
+        //        using (var reader = new StreamReader(filePath))
+        //        {
+        //            string[] headers = null;
+        //            int lineNumber = 0;
+
+        //            while (!reader.EndOfStream)
+        //            {
+        //                var line = reader.ReadLine();
+
+        //                // Dùng Split với tham số StringSplitOptions.RemoveEmptyEntries để đảm bảo không bị lỗi do khoảng trắng
+        //                var values = line.Split(new[] { ',' }, StringSplitOptions.None);
+
+        //                if (lineNumber == 0)
+        //                {
+        //                    // Đọc dòng đầu tiên làm tiêu đề cột
+        //                    headers = values;
+        //                }
+        //                else
+        //                {
+        //                    // Đọc từng dòng và chuyển thành object
+        //                    var record = new Dictionary<string, object>();
+        //                    for (int i = 0; i < headers.Length - 1; i++) // Lặp qua các cột ngoài cột cuối
+        //                    {
+        //                        record[headers[i].Trim()] = values[i].Trim();
+        //                    }
+
+        //                    // Cột cuối cùng (FileList): Lấy từ cột thứ [headers.Length - 1] và ghép tất cả các giá trị còn lại
+        //                    var fileListIndex = headers.Length - 1;
+        //                    record[headers[fileListIndex].Trim()] = values
+        //                        .Skip(fileListIndex) // Bỏ qua các cột trước đó
+        //                        .Select(file => file.Trim()) // Loại bỏ khoảng trắng
+        //                        .ToList(); // Chuyển thành danh sách
+
+        //                    data.Add(record);
+        //                }
+        //                lineNumber++;
+        //            }
+        //        }
+
+        //        return Ok(data); // Trả dữ liệu JSON
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return StatusCode(500, new { message = "Lỗi đọc file CSV", error = ex.Message });
+        //    }
+        //}
 
 
 

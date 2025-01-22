@@ -126,8 +126,20 @@ namespace MACSAPI.Controllers
             return Ok(_userGroups);
         }
 
+        [HttpGet("GetUserById/{id}")]
+        public IActionResult GetUserById(int id)
+        {
+            // Tìm user trong danh sách theo AccountId
+            var user = _users.FirstOrDefault(u => u.AccountId == id);
+
+            if (user == null)
+                return NotFound(new { Message = "User not found" });
+
+            return Ok(user);  // Trả về thông tin user nếu tìm thấy
+        }
+
         [HttpGet("GetUserByName/{FullName}")]
-        public IActionResult GetUserById(string FullName)
+        public IActionResult GetUserByName(string FullName)
         {
             // Tìm user trong danh sách theo AccountId
             var user = _users.FirstOrDefault(u => u.FullName == FullName);

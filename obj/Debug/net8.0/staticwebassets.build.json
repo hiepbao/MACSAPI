@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+C7hr9JU/ZqrYr7oS72QSMj5wRT1wB120o9OYFyfAZI=",
+  "Hash": "wFng57wjwVAoFTDlLXtlUkCUZdD/38ybDwNsvjsXYvA=",
   "Source": "MACSAPI",
   "BasePath": "_content/MACSAPI",
   "Mode": "Default",
@@ -36,12 +36,12 @@
       "OriginalItemSpec": "wwwroot\\Logs\\UploadHistory.csv"
     },
     {
-      "Identity": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\Logs\\upload-log-20250108.txt",
+      "Identity": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\Logs\\upload-log-20250115.txt",
       "SourceId": "MACSAPI",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\",
       "BasePath": "_content/MACSAPI",
-      "RelativePath": "Logs/upload-log-20250108.txt",
+      "RelativePath": "Logs/upload-log-20250115.txt",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -52,7 +52,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Logs\\upload-log-20250108.txt"
+      "OriginalItemSpec": "wwwroot\\Logs\\upload-log-20250115.txt"
     },
     {
       "Identity": "C:\\Users\\cubi2\\OneDrive\\Máy tính\\lamviec\\MACSAPI\\wwwroot\\UploadedFiles\\cb87d77a0303be5de712.jpg",

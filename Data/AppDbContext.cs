@@ -8,7 +8,10 @@ namespace MACSAPI.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        public DbSet<HistoryCar> HistoryCar { get; set; } 
+        public DbSet<HistoryCar> HistoryCar { get; set; }
+        public DbSet<FileModel> FileModel { get; set; }
+        public DbSet<TaskAssignmentGroup> TaskAssignmentGroups { get; set; }
+        public DbSet<TaskAssignment> TaskAssignments { get; set; }
     }
 
 
